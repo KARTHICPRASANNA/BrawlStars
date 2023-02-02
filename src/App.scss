@@ -5,3 +5,38 @@
 		font-weight: bold;
 	}
 }
+
+.columnStyle {
+	font-size: 25px;
+	background-color: lightcyan;
+	border: 2px solid black;
+	width: 125px;
+	padding: 3px;
+	padding-right: 20px;
+	text-align: right;
+	color: black;
+}
+
+.titleStyle {
+	font-size: 40px;
+	padding-left: 120px;
+	word-spacing: 60px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 3px;
+	text-Align: center;
+	text-decoration: underline;
+}
+
+.tableStyle {
+	border-collapse: collapse;
+	border: 2px solid black;
+	margin: auto;
+}
+
+.headerStyle {
+	font-size: 35px;
+	background-color: lightcyan;
+	border: 1px solid black;
+}
+
