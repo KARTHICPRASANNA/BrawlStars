@@ -2,18 +2,18 @@ import { React } from 'react';
 import SortingManager from '../services/SortingManager';
 
 const types = {
-	LeastTrophies: (context) =>
-		SortingManager.getLeastTrophies(context),
-	MostTrophies: (context) =>
-		SortingManager.getMostTrophies(context),
-	PowerLevel: (context) =>
-		SortingManager.getPowerLevel(context),
-	ByRarity: (context) =>
-		SortingManager.getRarity(context),
-	ByRarityDescending: (context) =>
-		SortingManager.getRarityDescending(context),
-	ClosestToNextRank: (context) =>
-		SortingManager.closestToNextRank(context),
+	'Least Trophies': (context) =>
+		SortingManager.sortByLeastTrophies(context),
+	'Most Trophies': (context) =>
+		SortingManager.sortByMostTrophies(context),
+	'Power Level': (context) =>
+		SortingManager.sortByPowerLevel(context),
+	'By Rarity': (context) =>
+		SortingManager.sortByRarity(context),
+	'By Rarity Descending': (context) =>
+		SortingManager.sortByRarityDescending(context),
+	'Closest To Next Rank': (context) =>
+		SortingManager.sortByClosestToNextRank(context),
 };
 
 const Button = (context) => {

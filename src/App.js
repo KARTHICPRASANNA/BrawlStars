@@ -6,8 +6,8 @@ import characters from './data/characters';
 
 const getInitialState = () => ({
 	brawlStars: characters,
-	indexValue: 0,
-	sortMode: 'LeastTrophies',
+	indexValue: 1,
+	sortMode: 'Least Trophies',
 });
 
 const App = (context) => {

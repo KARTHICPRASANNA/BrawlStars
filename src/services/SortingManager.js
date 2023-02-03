@@ -1,31 +1,31 @@
-const getLeastTrophies = ({ state: { brawlStars }}) =>
+const sortByLeastTrophies = ({ state: { brawlStars }}) =>
 	brawlStars.sort((a, b) => a.trophies - b.trophies);
 
-const getMostTrophies = ({ state: { brawlStars }}) =>
+const sortByMostTrophies = ({ state: { brawlStars }}) =>
 	brawlStars.sort((a, b) => b.trophies - a.trophies);
 
-const getPowerLevel = ({ state: { brawlStars }}) =>
+const sortByPowerLevel = ({ state: { brawlStars }}) =>
 	brawlStars.sort((a, b) => b.power - a.power);
 
-const getRarity = ({ state: { brawlStars }, config: { rarityLevel }}) =>
+const sortByRarity = ({ state: { brawlStars }, config: { rarityLevel }}) =>
 	brawlStars.sort((a, b) => rarityLevel[a.rarity] - rarityLevel[b.rarity]);
 
-const getRarityDescending = ({ state: { brawlStars },
+const sortByRarityDescending = ({ state: { brawlStars },
 	config: { rarityLevel }}) =>
 	brawlStars.sort((a, b) => rarityLevel[b.rarity] - rarityLevel[a.rarity]);
 
-const closestToNextRank = ({ state: { brawlStars },
+const sortByClosestToNextRank = ({ state: { brawlStars },
 	config: { rankTrophies }}) => brawlStars.sort((a, b) =>
 	(rankTrophies[a.rank] - a.trophies)
 		- (rankTrophies[b.rank] - b.trophies));
 
 const SortingManager = {
-	getLeastTrophies,
-	getMostTrophies,
-	getPowerLevel,
-	getRarity,
-	getRarityDescending,
-	closestToNextRank,
+	sortByLeastTrophies,
+	sortByMostTrophies,
+	sortByPowerLevel,
+	sortByRarity,
+	sortByRarityDescending,
+	sortByClosestToNextRank,
 };
 
 export default SortingManager;
