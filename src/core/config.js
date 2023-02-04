@@ -7,6 +7,7 @@ const config = {
 		'brawlCoins',
 		'trophies',
 		'rank',
+		'image',
 	],
 	sorting: [
 		'Least Trophies',
