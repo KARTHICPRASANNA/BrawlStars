@@ -1,4 +1,5 @@
 const config = {
+	size: 1,
 	headers: [
 		'name',
 		'power',

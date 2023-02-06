@@ -1,3 +1,5 @@
+/* eslint-disable no-magic-numbers */
+
 const sortByLeastTrophies = ({ state: { brawlStars }}) =>
 	brawlStars.sort((a, b) => a.trophies - b.trophies);
 
