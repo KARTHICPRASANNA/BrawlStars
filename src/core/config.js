@@ -1,5 +1,49 @@
 const config = {
 	size: 1,
+	characters: [
+		{
+			name: 'BARLEY',
+			rarity: 'common',
+			trophies: 33,
+			rank: 5,
+			image: '/images/BARLEY.png',
+		},
+		{
+			name: 'EL PRIMO',
+			rarity: 'rare',
+			trophies: 55,
+			rank: 6,
+			image: '/images/EL PRIMO.png',
+		},
+		{
+			name: 'BROCK',
+			rarity: 'superRare',
+			trophies: 78,
+			rank: 7,
+			image: '/images/BROCK.png',
+		},
+		{
+			name: 'BO',
+			rarity: 'legendary',
+			trophies: 100,
+			rank: 9,
+			image: '/images/BO.png',
+		},
+		{
+			name: 'COLT',
+			rarity: 'epic',
+			trophies: 143,
+			rank: 11,
+			image: '/images/COLT.png',
+		},
+		{
+			name: 'TARA',
+			rarity: 'mythic',
+			trophies: 175,
+			rank: 12,
+			image: '/images/TARA.png',
+		},
+	],
 	headers: [
 		'name',
 		'power',
