@@ -9,7 +9,7 @@ const BrawlCoins = ({ data: { brawlStar }}) =>
 			width="50px"
 			height="50px"
 		/>
-		<label className="brawlCoinStyle">{brawlStar.brawlCoins}</label>
+		<span className="brawlCoinStyle">{brawlStar.brawlCoins}</span>
 	</div>;
 
 export default BrawlCoins;

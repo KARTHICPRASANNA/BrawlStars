@@ -1,12 +1,13 @@
-import { React, useState } from 'react';
 import './App.scss';
-import BrawlStars from './components/BrawlStars';
-import Title from './components/Title';
-import Button from './components/Button';
-import SortingManager from './services/SortingManager';
+import { React, useState } from 'react';
+
+import CharacterManager from './services/CharacterManager';
+import Title from './components/Title/Title';
+import Container from './components/Container';
+import Button from './components/Button/Button';
 
 const getInitialState = (context) => ({
-	brawlStars: SortingManager.getCharacters(context),
+	brawlStars: CharacterManager.getCharacters(context),
 	indexValue: 1,
 	sortMode: 'Least Trophies',
 });
@@ -17,7 +18,7 @@ const App = (context) => {
 
 	return <div className="App">
 		<Title { ...extendedContext }/>
-		<BrawlStars { ...extendedContext }/>
+		<Container { ...extendedContext }/>
 		<Button { ...extendedContext }/>
 	</div>;
 };

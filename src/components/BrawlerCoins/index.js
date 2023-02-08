@@ -1,13 +1,13 @@
 import { React } from 'react';
 import BrawlCoins from './BrawlCoins';
 import PowerCoins from './PowerCoins';
-import Symbol from './Symbol';
+import Operator from './Operator';
 
-const Rectangle = (context) =>
-	<div className="rectangle">
+const Footer = (context) =>
+	<div className="footer">
 		<PowerCoins { ...context }/>
-		<Symbol/>
+		<Operator/>
 		<BrawlCoins { ...context }/>
 	</div>;
 
-export default Rectangle;
+export default Footer;

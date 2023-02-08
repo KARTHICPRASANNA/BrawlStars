@@ -1,5 +1,5 @@
 import { React } from 'react';
-import SortingManager from '../services/SortingManager';
+import SortingManager from '../../services/SortingManager';
 
 const types = {
 	'Least Trophies': (context) =>

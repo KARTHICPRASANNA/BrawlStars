@@ -9,7 +9,7 @@ const Rank = ({ data: { brawlStar }}) =>
 			width="60px"
 			height="50px"
 		/>
-		<label className="rankStyle">{ brawlStar.rank }</label>
+		<span className="rankStyle">{ brawlStar.rank }</span>
 	</div>;
 
 export default Rank;
