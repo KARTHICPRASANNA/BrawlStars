@@ -3,7 +3,6 @@ const config = {
 	squareLeftMargin: 400,
 	squareTopMultiplier: 340,
 	squareTopMargin: 200,
-	size: 1,
 	characters: [
 		{
 			name: 'BARLEY',

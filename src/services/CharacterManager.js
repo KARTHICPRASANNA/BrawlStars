@@ -11,15 +11,15 @@ const getCharacters = ({ config: { characters }}) =>
 
 const getSquare = (context) => {
 	const { data: { key },
-		config: { size, squareTopMultiplier, squareTopMargin,
+		config: { squareTopMultiplier, squareTopMargin,
 			squareLeftMultiplier, squareLeftMargin }} = context;
 
 	return {
-		top: ((Math.floor(key / 3) * squareTopMultiplier)
-		+ squareTopMargin) * size,
-		left: (((key % 3) * squareLeftMultiplier) + squareLeftMargin) * size,
-		width: 300 * size,
-		height: 200 * size,
+		top: (Math.floor(key / 3) * squareTopMultiplier)
+		+ squareTopMargin,
+		left: ((key % 3) * squareLeftMultiplier) + squareLeftMargin,
+		width: 300,
+		height: 200,
 	};
 };
 
