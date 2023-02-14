@@ -1,10 +1,22 @@
 .App {
-	text-align: center;
-	background-image: url(https://i.redd.it/rmmz9vnwvd031.jpg) ;
+	display: flex;
+	justify-content: center;
+	background-image: url(https://i.redd.it/rmmz9vnwvd031.jpg);
 	background-repeat: no-repeat;
 	width: 100vw;
 	height: 100vh;
 	background-size: cover;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 800px;
+	width: 1500px;
+	margin-top: 10%;
+	border: 3px solid yellow;
 }
 
 .columnStyle {
@@ -46,7 +58,9 @@
 }
 
 .square {
-	position: absolute;
+	position: relative;
+	height: 200px;
+	width: 300px;
 	border: 3px solid black;
 	background-color: aquamarine;
 }
@@ -172,12 +186,26 @@
 }
 
 .title {
+	position: absolute;
+	top: 5%;
+	left: 40%;
+	font-weight: bold;
+	font-size: xxx-large;
 	color: white;
 }
 
 .bar {
 	height: 100%;
 	background-color: gold;
+}
+
+.button {
+	position: absolute;
+	top: 15%;
+	left: 43%;
+	font-weight: bold;
+	font-size: xx-large;
+	background-color: lightsteelblue;
 }
 
 

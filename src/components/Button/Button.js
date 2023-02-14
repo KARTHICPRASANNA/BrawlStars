@@ -22,6 +22,7 @@ const Button = (context) => {
 
 	return (
 		<button
+			className="button"
 			onClick={ () => setState({
 				...state,
 				indexValue: indexValue + 1,

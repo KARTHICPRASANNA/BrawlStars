@@ -1,6 +1,5 @@
 import { React } from 'react';
 
-import CharacterManager from '../services/CharacterManager';
 import CharacterImage from './BrawlerImage/CharacterImage';
 import CharacterName from './BrawlerName/CharacterName';
 import Footer from './BrawlerCoins';
@@ -9,10 +8,7 @@ import Rank from './Rank/Rank';
 import Trophy from './Trophy/Trophy';
 
 const Brawler = (context) =>
-	<div
-		className="square"
-		style={ CharacterManager.getSquare(context) }
-	>
+	<div className="square">
 		<CharacterImage { ...context }/>
 		<CharacterName { ...context }/>
 		<Footer { ...context }/>
