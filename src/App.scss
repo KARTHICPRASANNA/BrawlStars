@@ -1,6 +1,7 @@
 .App {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	background-image: url(https://i.redd.it/rmmz9vnwvd031.jpg);
 	background-repeat: no-repeat;
 	width: 100vw;
@@ -14,8 +15,8 @@
 	justify-content: space-evenly;
 	align-items: center;
 	height: 800px;
-	width: 1500px;
-	margin-top: 10%;
+	width: 1200px;
+	margin-top: 5%;
 	border: 3px solid yellow;
 }
 
@@ -133,7 +134,7 @@
 	font-weight: bold;
 }
 
-.powerStyle{
+.powerStyle {
 	position: absolute;
 	top: 85%;
 	left: 88%;
@@ -144,6 +145,22 @@
 	color: white;
 	background-color: black;
 }
+
+.powerIcon {
+	position: absolute;
+	top: 80%;
+	left: 53%;
+}
+
+.powerTop {
+	padding-top: 5%;
+	border-radius: 50%;
+}
+
+.powerBottom {
+	border-radius: 50%;
+}
+
 
 .rankStyle {
 	position: absolute;
@@ -186,9 +203,6 @@
 }
 
 .title {
-	position: absolute;
-	top: 5%;
-	left: 40%;
 	font-weight: bold;
 	font-size: xxx-large;
 	color: white;
@@ -200,9 +214,6 @@
 }
 
 .button {
-	position: absolute;
-	top: 15%;
-	left: 43%;
 	font-weight: bold;
 	font-size: xx-large;
 	background-color: lightsteelblue;

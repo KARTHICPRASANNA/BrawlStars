@@ -9,8 +9,19 @@ const getCharacters = ({ config: { characters }}) =>
 		brawlCoins: rndBetween(1, 10),
 	}));
 
+const getUpdatedPowerUp = (context) => {
+	const { setState } = context;
+
+	return setInterval(() => setState((state) =>
+		({
+			...state,
+			powerUp: !state.powerUp,
+		})), 2000);
+};
+
 const CharacterManager = {
 	getCharacters,
+	getUpdatedPowerUp,
 };
 
 export default CharacterManager;

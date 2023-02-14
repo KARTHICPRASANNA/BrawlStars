@@ -10,16 +10,20 @@ const getInitialState = (context) => ({
 	brawlStars: CharacterManager.getCharacters(context),
 	indexValue: 1,
 	sortMode: 'Least Trophies',
+	powerUp: false,
 });
 
 const App = (context) => {
 	const [state, setState] = useState(getInitialState(context));
 	const extendedContext = { ...context, state, setState };
+	const { once } = context;
+
+	once(() => CharacterManager.getUpdatedPowerUp(extendedContext));
 
 	return <div className="App">
 		<Title { ...extendedContext }/>
-		<Container { ...extendedContext }/>
 		<Button { ...extendedContext }/>
+		<Container { ...extendedContext }/>
 	</div>;
 };
 
